@@ -1,0 +1,23 @@
+/* use an `element` css selector to set the background color for the header */
+header
+{
+    background-color: green;
+}
+
+/* use an `id` based css selector to set the border of the #main section */
+#main
+{
+    border: 4px dashed red;
+}
+
+
+/* 
+   use a `class` based selector to set the 'lead paragraph' to a larger font
+   and different color 
+*/
+.lead
+{
+    font-size: 140%;
+    font-weight: bold;
+    color: darkred;
+}
