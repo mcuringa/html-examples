@@ -1,0 +1,68 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    background-repeat: none;
+}
+
+header
+{
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.see
+{
+    background-color: rgba(255,255,255,.6); /* a white background with 90% opacity */
+                                            /* this will show a little bit of the background */
+}
+
+
+#main
+{
+    max-width: 520px; /* make the main area max of 600px wide */
+    margin-left: 3em; /* zero margin on top and bottom, horizontally centered */
+    border: 1px solid gray; /* a gray border around the main area */
+    border-radius: 6px; /* give us rounded corners */
+    padding: 1em;
+    font-size: 130%;
+}
+
+h5
+{
+    margin: 0;
+    padding: 0;
+}
+nav
+{
+    display: inline-block;
+    margin-right: 2em;
+}
+
+nav button
+{
+    padding: 0em;
+    margin-right: .25em;
+    cursor: pointer;
+}
+
+
+nav img
+{
+    width: 24px;
+    margin: 0;
+}
+
+nav button:hover, .active
+{
+    border: 2px solid #ff6600;
+    border-radius: 7px;
+    box-shadow: 0 0 8px #ff9900;
+}
+
+footer div
+{
+    float: left;
+    max-width: 300px;
+    margin-right: 2em;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Customization Example</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <script src="js/jquery-3.1.0.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="backgrounds">
+            <h5>choose background:</h5>
+            <button id="ponies">
+                <img  src="img/ponies_th.jpg" alt="my little pony thumbnail">
+            </button>
+            <button id="banksy">
+                <img src="img/banksy_th.png" alt="banksy flower thrower thumbnail">
+            </button>
+            <button id="puppies">
+                <img src="img/puppies_th.jpg" alt="puppies thumbnail">
+            </button>
+        </nav>
+
+        <nav id="songs">
+            <h5>choose music:</h5>
+            <button id="cliverpool_btn">
+                <img  src="img/cliverpool_th.jpg" alt="listen to cliverpool by pierlo">
+            </button>
+            <button id="night_owls_btn">
+                <img  src="img/night_owl_th.jpg" alt="listen to night owl by broke for free">
+            </button>
+
+        </nav>
+
+    </header>
+    <section id="main" class="see">
+        <p>
+            As our first exploration of javascript, we're going to learn how to use
+            some basic programming concepts to allow users to customize a page. Study
+            this code, and then after you have a good understanding, modify the code
+            to complete each of these tasks:
+        </p>
+
+        <ol>
+            <li>Add a new option for background image.</li>
+            <li>Add a new music option.</li>
+            <li>Add an option to change the font size.</li>
+            <li>Add an option to change the font face.</li>
+            <li>Change the music buttons so that they pause the song if it's already playing</li>
+            <li>Add a mute/volume icon that shows if music is playing or not</li>
+            <li>Add something cool that you thought of on your own</li>
+        </ol>
+
+    </section>
+
+    <footer class="see">
+        <div id="photos">
+            <h2>Photo Credits</h2>
+            <ul>
+                <li>"Ponies Wallpaper" by <a href="https://www.flickr.com/photos/censto/" title="go to DyosEL page on Flickr">DyosEL</a></li>
+                <li>"Flower Thrower" by <a href="https://en.wikipedia.org/wiki/Banksy" title="Banksy wikipedia page">Banksy</a></li>
+                <li>"Yellow labradors" by <a href="http://feelgrafix.com/921990-yellow-labrador-puppies.html" title="Yellow Labrador Puppies Wallpapers">Banksy</a></li>
+            </ul>
+        </div>
+
+        <div id="sounds">
+            <h2>Music Credits</h2>
+            <ul>
+                <li>"Cliverpool" by <a href="http://freemusicarchive.org/music/Pierlo/Saturday_Night_Sleeper/03_Cliverpool" title="download or listen to Cliverpool">Pierlo</a></li>
+                <li>"Night Owl" by <a href="http://freemusicarchive.org/music/Broke_For_Free/Directionless_EP/Broke_For_Free_-_Directionless_EP_-_01_Night_Owl" title="download or listen to Night owl">Broke For Free</a></li>
+            </ul>
+        </div>
+    </footer>
+
+<!-- put our audio tags down here, they don't display -->
+<audio id="cliverpool" src="music/cliverpool.mp3" preload="auto" loop></audio>
+<audio id="night_owl" src="music/night_owl.mp3" preload="auto" loop></audio>
+
+</body>
+<script src="js/custom.js" charset="utf-8"></script>
+</html>
