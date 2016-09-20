@@ -1,0 +1,52 @@
+html, body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-image: url('spoons.jpg');
+}
+
+#main
+{
+    background-color: rgba(255,255,255,.8);
+    border-radius: 16px;
+    padding: 2em;
+    max-width: 640px;
+    margin: 0 auto; /*center this section horizontally*/
+
+}
+
+body, p, label, button, a, input, div, li
+{
+    font-family: Helvetica, Futura, Verdana, sans-serif;
+    font-size: 110%;
+    line-height: 1.25em;
+}
+
+
+form div
+{
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+#result
+{
+    background-color: LemonChiffon;
+    border-radius: 8px;
+    line-height: 2em;
+    padding: 1em;
+}
+
+#todo
+{
+    margin-top: 2em;
+    border-top: 3px solid gray;
+}
+li
+{
+    margin-bottom: .5em;
+}

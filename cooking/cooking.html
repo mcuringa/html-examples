@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Customization Example</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
+    <script src="js/jquery-3.1.0.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="main">
+        <section id="intro">
+            <h2>Cooking converter</h2>
+            <p>
+                This example uses a cooking units converter to demonstrate
+                a few key programming concepts, especially using variables
+                for constant data, reading user input from html forms,
+                and using javascript/jquery to dynamically update the UI
+            </p>
+
+        </section>
+        <section id="converter">
+            <form>
+                <div>
+                    <label for="cups">Enter cups:</label>
+                    <input type="number" id="cups" placeholder="# of cups">
+                </div>
+                <div>
+                    <label for="convertTo">Convert to:</label>
+                    <select id="convertTo">
+                        <option value="tbs">Tablespoons</option>
+                        <option value="tsp">Teaspoons</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="button" id="convert">Convert!</button>
+                </div>
+            </form>
+            <div id="result"><strong>Results:</strong> <span></span></div>
+        </section>
+        <section id="todo">
+            <h3>To do:</h3>
+            <ol>
+                <li>Add 2 more units to the dropdown menu</li>
+                <li>
+                    In "results", instead of just outputting the result, put it
+                    in a complete sentence, like: <em><tt>3</tt> cups equals <tt>48</tt> tablespoons.</em>
+                </li>
+                <li>
+                    Add an error message/warning if the user doesn't
+                    enter an number in the "enter cups" field.
+                </li>
+                <li>
+                    Hard bonus (if you're done early), update the user interface
+                    and logic so the user can convert to and from any of the 
+                    units supported, not just <em>cups</em> to other units.
+                </li>
+            </ol>
+        </section>
+    </div>
+
+<script src="js/cooking.js" charset="utf-8"></script>
+</body>
+</html>
