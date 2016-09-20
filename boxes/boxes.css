@@ -21,3 +21,15 @@ header
     font-weight: bold;
     color: darkred;
 }
+
+
+/* 
+   select several blocks at the same time (using elements) 
+   remove margin and padding to make those boxes flush
+*/
+html, body
+{
+    padding: 0;
+    margin: 0;
+}
+

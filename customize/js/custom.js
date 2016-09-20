@@ -5,7 +5,8 @@
 //depending on which thumbnail is clicked
 
 
-$( "#ponies" ).click(function() {
+$( "#ponies" ).click(function() 
+{
     console.log("ponies clicked");
     //set the background image
     $("body").css("background-image", "url('img/ponies.jpg')");
@@ -19,8 +20,10 @@ $( "#ponies" ).click(function() {
 });
 
 
-$( "#banksy" ).click(function() {
+$( "#banksy" ).click(function()
+{
     console.log("banksy clicked");
+    
     //set the background image
     $("body").css("background-image", "url('img/banksy.png')");
 
