@@ -1,0 +1,23 @@
+body
+{
+    padding: 0;
+    margin: 0;
+}
+
+#thumbnails
+{
+    margin: 0 auto;
+    width: 800px;
+}
+
+#thumbnails div
+{
+    float: left;
+    width: 200px;
+}
+
+#thumbnails img
+{
+    width: 200px;
+}
+
