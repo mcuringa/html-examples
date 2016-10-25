@@ -13,11 +13,11 @@ body
 #thumbnails div
 {
     float: left;
-    width: 200px;
 }
 
-#thumbnails img
+#thumbnails img, #thumbnails div
 {
-    width: 200px;
+    width: 100px;
 }
 
+#detail img { width: 400px; }
