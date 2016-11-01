@@ -2,20 +2,39 @@ body
 {
     padding: 0;
     margin: 0;
+    background: #020202;
+    color: white;
 }
+
+body, div, section, p, li, td, h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 
 #thumbnails
 {
-    margin: 0 auto;
-    width: 800px;
+    position: relative;
 }
-
 #thumbnails div
 {
     float: left;
 }
+#thumbnails div:hover
+{
+    cursor: pointer;
+}
 
-#thumbnails img, #thumbnails div
+#thumbnails div
+{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+
+#thumbnails img
 {
     width: 100px;
 }
@@ -25,13 +44,14 @@ body
     font-size: .8rem;
     font-weight: bold;
     padding: .25em;
-    border: 1px solid gray;
     background: lightgray;
     position: absolute;
+    margin-top: 0;
+    color: black;
+    left: 0;
+    right: 0;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    margin-top: 0;
-    border-radius: 6px;
 }
 
 #thumbnails div:hover h3
@@ -56,11 +76,16 @@ body
 }
 
 
+#detail
+{
+    margin-bottom: 1em;
+}
 
-#detail img { width: 400px; }
+#detail img { max-width: 100%; }
 
 #detail figure
 {
+    margin: 0;
     transition: opacity 1s ease-in-out;
     opacity: 1;
 }

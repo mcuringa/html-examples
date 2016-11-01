@@ -16,6 +16,23 @@ var photos = [
         title: "Vintage Magic Cards",
         desc: "Diego checking out Mo's 1994 Magic the Gathering deck",
         location: "Joyce Bakeshop, Brooklyn"
+    },    {
+        filename: "zeroday.jpg",
+        title: "Zero Day Camp",
+        desc: "The Zero Day Camp crew, summer 2016",
+        location: "Crown Heights, Brooklyn"
+    },
+    {
+        filename: "ent.jpg",
+        title: "Treebeard",
+        desc: "Diego trying on his Ent costume for Halloween",
+        location: "Brooklyn"
+    },
+    {
+        filename: "enderman.jpg",
+        title: "Like an Enderman",
+        desc: "Fiona teleports onto our balcony",
+        location: "Brooklyn"
     }
 ];
 
@@ -72,6 +89,20 @@ $("#next").click(function()
     showDetail(nextIndex, 1000);
 
 });
+
+$("#prev").click(function()
+{
+    var currentIndex = Number($("#detail").data("index"));
+    var nextIndex = currentIndex - 1;
+    
+    if(nextIndex < 0)
+        nextIndex = photos.length -1;
+
+    showDetail(nextIndex, 1000);
+
+});
+
+
 
 $("#thumbnails img").click(function(event)
 {
