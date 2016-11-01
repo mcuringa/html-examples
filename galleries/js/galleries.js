@@ -19,18 +19,24 @@ var photos = [
     }
 ];
 
-function showDetail(index)
+
+function showDetail(index, delay)
 {
 
     var photo = photos[index];
     $("#detail").data("index", index);
-    $("#detail h2").html(photo.title);
-    $("#detail figcaption").html(photo.desc);
-    $("#detail img").attr("src", "./gallery/" + photo.filename);
+    $("#detail figure").addClass("fade");
+    var update = function() 
+    {
+        $("#detail h2").html(photo.title);
+        $("#detail figcaption").html(photo.desc);
+        $("#detail img").attr("src", "./gallery/" + photo.filename);
+        $("#detail figure").removeClass("fade");
 
-
+    };
+    
+    setTimeout(update, delay);
 }
-
 
 function makeThumbs()
 {
@@ -53,7 +59,7 @@ function makeThumbs()
 
 
 makeThumbs();
-showDetail(0);
+showDetail(0, 0);
 
 $("#next").click(function()
 {
@@ -63,7 +69,7 @@ $("#next").click(function()
     if(nextIndex >= photos.length)
         nextIndex = 0;
 
-    showDetail(nextIndex);
+    showDetail(nextIndex, 1000);
 
 });
 
@@ -74,6 +80,6 @@ $("#thumbnails img").click(function(event)
     console.log(img);
     var index = Number( $(img).data("index") );
 
-    showDetail(index);
+    showDetail(index, 1000);
 
 });

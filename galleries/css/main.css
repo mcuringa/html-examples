@@ -20,4 +20,52 @@ body
     width: 100px;
 }
 
+#thumbnails div h3
+{
+    font-size: .8rem;
+    font-weight: bold;
+    padding: .25em;
+    border: 1px solid gray;
+    background: lightgray;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: 0;
+    border-radius: 6px;
+}
+
+#thumbnails div:hover h3
+{
+    opacity: 1;
+}
+
+
+
+
+#thumbnails div:hover img
+{
+
+    opacity: .5;
+    transition: opacity .25s ease-in-out;
+}
+
+
+#thumbnails div img 
+{
+    opacity: 1; 
+}
+
+
+
 #detail img { width: 400px; }
+
+#detail figure
+{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+#detail figure.fade
+{
+    opacity: 0;
+}
