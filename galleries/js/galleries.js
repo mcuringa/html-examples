@@ -37,7 +37,7 @@ var photos = [
 ];
 
 
-function showDetail(index, delay)
+function showDetail(index)
 {
 
     var photo = photos[index];
@@ -51,7 +51,10 @@ function showDetail(index, delay)
         $("#detail figure").removeClass("fade");
 
     };
+    var delay = $("#detail figure").css("transition-duration");
+    delay = Number(delay.slice(0,-1))*1000; //read the css delay and convert to millis
     
+    //don't call the update until our fade-out has finished
     setTimeout(update, delay);
 }
 
@@ -86,7 +89,7 @@ $("#next").click(function()
     if(nextIndex >= photos.length)
         nextIndex = 0;
 
-    showDetail(nextIndex, 1000);
+    showDetail(nextIndex);
 
 });
 
@@ -98,7 +101,7 @@ $("#prev").click(function()
     if(nextIndex < 0)
         nextIndex = photos.length -1;
 
-    showDetail(nextIndex, 1000);
+    showDetail(nextIndex);
 
 });
 
@@ -111,6 +114,6 @@ $("#thumbnails img").click(function(event)
     console.log(img);
     var index = Number( $(img).data("index") );
 
-    showDetail(index, 1000);
+    showDetail(index);
 
 });

@@ -86,7 +86,7 @@ body, div, section, p, li, td, h1, h2, h3, h4, h5, h6
 #detail figure
 {
     margin: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity .5s ease-in-out;
     opacity: 1;
 }
 
